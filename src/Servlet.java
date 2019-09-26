@@ -1,3 +1,5 @@
+import classForServlets.LogIn;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.annotation.WebServlet;
@@ -14,11 +16,18 @@ public class Servlet extends javax.servlet.http.HttpServlet {
     protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html;charset=utf-8");
-        HttpSession session = request.getSession(true);
-        Cookie[] cookies = request.getCookies();
+        LogIn logIn = new LogIn();
+        /*HttpSession session = request.getSession(true);
+        Cookie[] cookies = request.getCookies();*/
         String login = "";
         String password = "";
-        if (cookies.length > 0) {
+        Boolean haveCookey;
+        haveCookey = logIn.checkCookies(request,response,login,password);
+        if (haveCookey) {
+            login = (String) request.getAttribute("login");
+            password = (String) request.getAttribute("password");
+        }
+        /*if (cookies.length > 0) {
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("login"))
                     login = cookie.getValue();
@@ -27,7 +36,8 @@ public class Servlet extends javax.servlet.http.HttpServlet {
             }
             request.setAttribute("login", login);
             request.setAttribute("password", password);
-        }
+        }*/
+
         out.print("<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +
                 "<head>\n" +
