@@ -6,8 +6,8 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-
-@WebServlet("/servlet2")
+/*
+@WebServlet("/servlet2")*/
 public class Servlet2 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
