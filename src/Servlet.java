@@ -16,8 +16,8 @@ public class Servlet extends javax.servlet.http.HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         HttpSession session = request.getSession(true);
         Cookie[] cookies = request.getCookies();
-        String login = null;
-        String password = null;
+        String login = "";
+        String password = "";
         if (cookies.length > 0) {
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("login"))
@@ -38,8 +38,8 @@ public class Servlet extends javax.servlet.http.HttpServlet {
                 "<form method=\"post\" action=\"/servlet2\">\n" +
                 "          Login<input type=\"text\" name=\"login\" value=\"" + login + "\">\n" +
                 "          Password<input name=\"password\" type=\"text\" value=\""+password+"\" >\n" +
-                "          <input type=\"submit\" value=\"Log in\">\n" +
                 "          Remember me<input type=\"checkbox\" name=\"name\">\n" +
+                "          <input type=\"submit\" value=\"Log in\">\n" +
                 "    </form>\n" +
                 "</body>\n" +
                 "</html>");

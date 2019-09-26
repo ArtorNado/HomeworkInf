@@ -1,9 +1,6 @@
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -13,6 +10,16 @@ public class Servlet3 extends HttpServlet {
         PrintWriter out = response.getWriter();
         HttpSession session = request.getSession();
         out.print("Good Bye");
+        String login = request.getParameter("login");
+        String password = request.getParameter("password");
+        Cookie cookieLogin = new Cookie("login", login);
+        cookieLogin.setMaxAge(0);
+        cookieLogin.setPath("/");
+        response.addCookie(cookieLogin);
+        Cookie cookiePassword = new Cookie("password", password);
+        cookiePassword.setMaxAge(0);
+        cookieLogin.setPath("/");
+        response.addCookie(cookiePassword);
         session.invalidate();
         response.setContentType("text/html;charset=utf-8");
         out.print("<!DOCTYPE html>\n" +
