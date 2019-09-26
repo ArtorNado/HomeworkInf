@@ -1,3 +1,5 @@
+import classForServlets.LogOut;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -7,8 +9,10 @@ import java.io.PrintWriter;
 /*@WebServlet("/servlet3")*/
 public class Servlet3 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        LogOut logOut = new LogOut();
         PrintWriter out = response.getWriter();
-        HttpSession session = request.getSession();
+        logOut.deleteSessionCookies(request,response);
+        /*HttpSession session = request.getSession();
         out.print("Good Bye");
         String login = request.getParameter("login");
         String password = request.getParameter("password");
@@ -20,7 +24,7 @@ public class Servlet3 extends HttpServlet {
         cookiePassword.setMaxAge(0);
         cookieLogin.setPath("/");
         response.addCookie(cookiePassword);
-        session.invalidate();
+        session.invalidate();*/
         response.setContentType("text/html;charset=utf-8");
         out.print("<!DOCTYPE html>\n" +
                 "<html lang=\"en\">\n" +
