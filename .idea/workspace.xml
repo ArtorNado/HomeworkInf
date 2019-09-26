@@ -7,12 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26cf4f82-5768-4347-a90d-71356c0d05d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/classForServlets/LogIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classForServlets/Profile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webtest_war_exploded/WEB-INF/classes/Servlet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webtest_war_exploded/WEB-INF/classes/Servlet2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webtest_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webtest_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webtest/Servlet2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webtest/Servlet2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servlet2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +42,7 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="7" />
           <entry key="JSP" value="3" />
           <entry key="XML" value="1" />
         </counts>
@@ -50,21 +50,45 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="355" />
-          <entry key="JAVA" value="3413" />
+          <entry key="JAVA" value="3527" />
           <entry key="JSP" value="20" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="PLAIN_TEXT" value="66" />
           <entry key="XML" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
-          <entry key="git.branch.create.new" value="1" />
+          <entry key="git.branch.create.new" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classForServlets/LogIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="126" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,34 +99,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classForServlets/LogIn.java">
+        <entry file="file://$PROJECT_DIR$/src/classForServlets/Profile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="158" selection-start-line="6" selection-start-column="158" selection-end-line="6" selection-end-column="158" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Servlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Servlet2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="8" column="2" selection-start-line="8" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="276">
+              <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -139,7 +148,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Homework" />
       </map>
     </option>
   </component>
@@ -150,11 +159,12 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/Servlet2.java" />
         <option value="$PROJECT_DIR$/src/Servlet3.java" />
         <option value="$PROJECT_DIR$/src/classForServlets/logIn.java" />
         <option value="$PROJECT_DIR$/src/classForServlets/LogIn.java" />
         <option value="$PROJECT_DIR$/src/Servlet.java" />
+        <option value="$PROJECT_DIR$/src/classForServlets/Profile.java" />
+        <option value="$PROJECT_DIR$/src/Servlet2.java" />
       </list>
     </option>
   </component>
@@ -218,7 +228,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569483892232" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569525233546" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -422,7 +432,7 @@
       <workItem from="1569425360787" duration="1847000" />
       <workItem from="1569427885612" duration="138000" />
       <workItem from="1569432612846" duration="6712000" />
-      <workItem from="1569523176705" duration="1352000" />
+      <workItem from="1569523176705" duration="1935000" />
     </task>
     <task id="LOCAL-00001" summary="add Delete Cookies">
       <created>1569481677463</created>
@@ -438,27 +448,33 @@
       <option name="project" value="LOCAL" />
       <updated>1569482880944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="carryover LogIn in method">
+      <created>1569524786877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569524786877</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39350000" />
+    <option name="totallyTimeSpent" value="39933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48697916" visible="true" weight="0.2076823" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4854369" visible="true" weight="0.2076823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.5130208" side_tool="true" visible="true" weight="0.2076823" />
+      <window_info id="Web" order="7" sideWeight="0.5145631" side_tool="true" visible="true" weight="0.2076823" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294271" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294271" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294271" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997396" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,7 +506,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Delete Cookies" />
     <MESSAGE value="Delete annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete annotations" />
+    <MESSAGE value="carryover LogIn in method" />
+    <option name="LAST_COMMIT_MESSAGE" value="carryover LogIn in method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp" />
@@ -511,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlet3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -532,17 +542,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Servlet2.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="8" column="2" selection-start-line="8" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classForServlets/LogIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="161">
+          <caret line="7" column="126" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="126" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -551,11 +561,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+        <state relative-caret-position="414">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classForServlets/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="158" selection-start-line="6" selection-start-column="158" selection-end-line="6" selection-end-column="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Servlet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="26" column="70" lean-forward="true" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
         </state>
       </provider>
     </entry>

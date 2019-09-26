@@ -1,3 +1,5 @@
+import classForServlets.Profile;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -10,6 +12,7 @@ import java.io.PrintWriter;
 @WebServlet("/servlet2")*/
 public class Servlet2 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Profile profile = new Profile();
         PrintWriter out = response.getWriter();
         String login = request.getParameter("login");
         String password = request.getParameter("password");
@@ -18,12 +21,13 @@ public class Servlet2 extends HttpServlet {
         String[] value = request.getParameterValues("name");
         if (value != null) {
             if (value[0].equals("on")) {
-                Cookie cookieLogin = new Cookie("login", login);
+                profile.createCookies(request,response,login,password);
+                /*Cookie cookieLogin = new Cookie("login", login);
                 cookieLogin.setMaxAge(24 * 60 * 60 * 30);
                 Cookie cookiePassword = new Cookie("password", password);
                 cookiePassword.setMaxAge(24 * 60 * 60 * 30);
                 response.addCookie(cookieLogin);
-                response.addCookie(cookiePassword);
+                response.addCookie(cookiePassword);*/
             }
         }
         if (login.equals("admin")) {
