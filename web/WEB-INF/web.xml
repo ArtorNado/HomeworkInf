@@ -27,4 +27,12 @@
         <servlet-name>Servlet3</servlet-name>
         <url-pattern>/servlet3</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Servlet4</servlet-name>
+        <servlet-class>Servlet4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet4</servlet-name>
+        <url-pattern>/servlet4</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -1,9 +1,6 @@
-import classForServlets.Profile;
+import classForProcessing.Profile;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -42,8 +39,12 @@ public class Servlet2 extends HttpServlet {
                     "<form method=\"post\" action=\"/servlet3\">\n" +
                     "          <input type=\"submit\" value=\"Log out\">\n" +
                     "    </form>\n" +
+                    "<form method=\"post\" action=\"/servlet4\">\n" +
+                    "          <input type=\"submit\" value=\"Create shopping list\">\n" +
+                    "    </form>\n" +
                     "</body>\n" +
                     "</html>");
+
         } else {
             String path = "http://localhost:8082/servlet";
             response.sendRedirect(path);

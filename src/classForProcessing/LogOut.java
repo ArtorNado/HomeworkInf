@@ -1,8 +1,7 @@
-package classForServlets;
+package classForProcessing;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
-import java.io.PrintWriter;
 
 public class LogOut {
 
